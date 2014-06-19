@@ -1,0 +1,20 @@
+body {
+  padding-top: 20px;
+}
+
+.container {
+  width: 800px;
+}
+
+.flags-action-bar {
+  margin-bottom: 20px;
+}
+
+.flags-list .list-group-item {
+  margin-bottom: 3px;
+}
+
+.list-group-item .flag-name {
+
+  font-size: 1.3em;
+}

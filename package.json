@@ -1,0 +1,27 @@
+{
+  "name": "flag-control-panel",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-angular-templates": "~0.5.5"
+  },
+  "devDependencies": {
+    "grunt-angular-templates": "^0.5.5",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/derrickwilliams/hackday-6.2014.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derrickwilliams/hackday-6.2014/issues"
+  },
+  "homepage": "https://github.com/derrickwilliams/hackday-6.2014"
+}

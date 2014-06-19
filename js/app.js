@@ -1,6 +1,6 @@
 (function() {
 
-  var app = angular.module('foggle', ['ui.router']);
+  var app = angular.module('foggle', ['ui.router', 'foggle.Templates']);
 
   app.config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
@@ -22,19 +22,14 @@
       list: {
         name: 'flagList',
         url: '/',
-        template: '<h1>list</h1>' +
-          '<ul>' +
-            '<li ng-repeat="flag in flags">' +
-              '<a href="#/flag/{{flag.name}}">{{flag.name}}</a>' +
-            '</li>' +
-          '</ul>',
+        templateUrl: 'list.html',
         controller: 'flagListCtrl'
       },
 
       form: {
         name: 'flagForm',
         url: '/flag/:name',
-        template: '<h1>form</h1>'
+        templateUrl: 'form.html'
       }
     };
 
