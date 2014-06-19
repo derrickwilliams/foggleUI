@@ -18,3 +18,11 @@ body {
 
   font-size: 1.3em;
 }
+
+.open-file-panel {
+  margin-top: 50px;
+}
+
+.open-file-panel label {
+  font-size: 3em;
+}
