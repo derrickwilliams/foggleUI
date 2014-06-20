@@ -3,7 +3,7 @@
   angular.module('foggle').factory('flagDataService', function() {
 
     var
-      flags = [];
+      flags;
 
 
     return {

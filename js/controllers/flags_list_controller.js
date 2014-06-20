@@ -2,11 +2,13 @@
 
   var app = angular.module('foggle');
 
-  app.controller('flagListCtrl', function($scope, flagDataService) {
+  app.controller('flagListCtrl', function($scope, flagDataService, $window) {
 
     $scope.searchTerm = '';
 
     $scope.allFlags = $scope.flags = flagDataService.get();
+
+    if ($scope.allFlags === undefined) $window.location = "#/"
 
     $scope.filterFlags = filterFlags;
 
