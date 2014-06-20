@@ -35,7 +35,14 @@
     }
 
     function updateFlag(data) {
-      console.log('updating', data);
+      flags = _.map(flags, function(f) {
+        if (data.name === f.name) {
+          return data;
+        }
+        else {
+          return f;
+        }
+      });
     }
 
     function get(name) {
@@ -58,6 +65,10 @@
       else {
         return flags;
       }
+    }
+
+    function findByName(name) {
+
     }
 
   });
