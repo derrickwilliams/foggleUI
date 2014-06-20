@@ -2,14 +2,11 @@
 
   var app = angular.module('foggle');
 
-  app.controller('flagListCtrl', function($scope) {
+  app.controller('flagListCtrl', function($scope, flagDataService) {
 
     $scope.searchTerm = '';
 
-    $scope.allFlags = $scope.flags = [
-      { name: 'MyFlag' },
-      { name: 'Another Flag' }
-    ];
+    $scope.allFlags = $scope.flags = flagDataService.get();
 
     $scope.filterFlags = filterFlags;
 
