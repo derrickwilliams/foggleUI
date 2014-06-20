@@ -8,8 +8,6 @@
 
     $scope.allFlags = $scope.flags = flagDataService.get();
 
-    if ($scope.allFlags === undefined) $window.location = "#/"
-
     $scope.filterFlags = filterFlags;
 
     function filterFlags() {

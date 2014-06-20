@@ -1,4 +1,11 @@
-[
-  { "name": "Tastey Cakes" },
-  { "name": "Something good" }
-]
+{
+  "HowMuchWood": {
+    "type": "number",
+    "value": 10
+  },
+
+  "WoodChucks": {
+    "type": "list",
+    "value": ["Steven", "Ray"]
+  }
+}

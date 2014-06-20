@@ -26,3 +26,36 @@ body {
 .open-file-panel label {
   font-size: 3em;
 }
+
+.control-label {
+  font-size: 1.5em;
+}
+
+form.flag-form {
+  margin-top: 25px;
+}
+
+.add-list-item-btn {
+  margin-top: 10px;
+}
+
+.list-type-item {
+  margin-bottom: 5px;
+}
+
+.save-btn {
+  margin-top: 20px;
+}
+
+.type-selector {
+  /*margin-left: 20px;*/
+  width: 50%;
+}
+
+.selected-type-display, .type-selector-items {
+  width: 80%;
+}
+
+.error-message {
+  margin-top: 20px;
+}
