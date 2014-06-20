@@ -10,6 +10,8 @@
 
     $scope.filterFlags = filterFlags;
 
+    $scope.remove = remove;
+
     function filterFlags() {
       if ($scope.searchTerm.length == 0) {
         $scope.flags = $scope.allFlags;
@@ -21,6 +23,10 @@
           return f.name.search(exp) > -1;
         });
       }
+    }
+
+    function remove(index) {
+      $scope.allFlags.splice(index, 1);
     }
 
   });

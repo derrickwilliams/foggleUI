@@ -32,6 +32,7 @@
       }
 
       flags.push(data);
+      save();
     }
 
     function updateFlag(data) {
@@ -43,6 +44,8 @@
           return f;
         }
       });
+
+      save();
     }
 
     function get(name) {
@@ -67,10 +70,21 @@
       }
     }
 
-    function findByName(name) {
+    function save() {
+      debugger
+      // Note: The file system has been prefixed as of Google Chrome 12:
+      window.requestFileSystem  = window.requestFileSystem || window.webkitRequestFileSystem;
 
+      window.requestFileSystem(window.PERSISTENT, 1024 * 1024, saveSuccess, errorCallback)
     }
 
+    function saveSuccess() {
+      console.log('success', arguments);
+    }
+
+    function errorCallback() {
+      console.log('error', arguments);
+    }
   });
 
 })();
